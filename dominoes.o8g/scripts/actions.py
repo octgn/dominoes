@@ -34,50 +34,50 @@ def moveright(card, x = 0, y = 0):
 
 def draw(group, x = 0, y = 0, randompos = 0, decksize = 0):
   mute()
-  deck = getGlobalVariable("Deck")
-  if deck == "CHECKOUT":
+  deck = getGlobalVariable("Deck")##Retrieves a copy of the shared Draw Pile global variable
+  if deck == "CHECKOUT":##Prevents card drawing if the Draw Pile is locked
     whisper("Deck is currently in use, please try this function again.")
     return
-  deck = eval(deck)
-  if len(deck) == 0:
+  deck = eval(deck)##Converts the Draw Pile into a true list, as global variables must be stored as strings
+  if len(deck) == 0:##Prevents card drawing if the Draw Pile is empty
     whisper("No dominoes left in Draw Pile!")
     return
-  setGlobalVariable("Deck", "CHECKOUT")
-  decksize = len(deck) - 1
-  randompos = rnd(0, decksize)
-  domino = deck[randompos]
-  card = table.create(domino,0,0,1,persist=True)
+  setGlobalVariable("Deck", "CHECKOUT")##Locks the Draw Pile to prevent other players from changing it while this function processes
+  decksize = len(deck) - 1##counts the number of dominoes in the Pile, then subtracts by one to obtain the upper boundary of the list index
+  randompos = rnd(0, decksize)##Generate a random number corresponding to an index in the Draw Pile list
+  domino = deck[randompos]##Identifies the specific domino at that position of the list
+  card = table.create(domino,0,0,1,persist=True)##Creates the randomly selected domino
   card.moveTo(me.hand)
-  del deck[randompos]
-  setGlobalVariable("Deck", str(deck))
+  del deck[randompos]##Removes the domino from the Draw Pile so others won't draw it again
+  setGlobalVariable("Deck", str(deck))##Stores the new Draw Pile into the shared global variable
   notify("{} drew a domino from the Draw Pile.".format(me))
   
 def doublesix(group, x = 0, y = 0, randompos = 0, decksize = 0, loop = 0):
   mute()
-  if getGlobalVariable("Deck") == "CHECKOUT":
+  if getGlobalVariable("Deck") == "CHECKOUT":##Prevents the function if the Draw Pile is locked
     whisper("Deck is currently in use, please try this function again.")
     return
   tablecount = sum(1 for card in table)
   handcount = sum(1 for card in me.hand)
   discardcount = sum(1 for card in shared.piles["Discard Pile"])
-  if tablecount + handcount + discardcount != 0:
+  if tablecount + handcount + discardcount != 0:##Cancels the function if there are dominoes in play, since the game hasn't been restarted
     whisper("There are currently dominoes in play, please Restart Game first.")
     return
   count = askInteger("Start the game with how many dominoes?", 7)
-  if count == None: count = 0
-  if len(players)*count > 28:
+  if count == None: return##If the player cancels out of the box, its assumed they don't want to continue the function
+  if len(players)*count > 28:##Makes sure there's enough dominoes to deal out to all players
     whisper("There aren't enough dominoes available to deal to each player! Try again with a different amount.")
     return
-  setGlobalVariable("Deck", "CHECKOUT")
-  tempdeck = list(doubleSixDeck)
+  setGlobalVariable("Deck", "CHECKOUT")##Locks the Draw Pile from manipulation
+  tempdeck = list(doubleSixDeck)##Grabs the full ordered list of GUIDs of all cards in a Double Six game
   deck = [ ]
   notify("{} is starting a new Double-Six game, shuffling dominoes...".format(me))
-  while len(tempdeck) > 0:
+  while len(tempdeck) > 0:##This is a shuffle algorithm to shuffle the list in tempdeck and store it in deck
     listsize = len(tempdeck) - 1
     pos = rnd(0, listsize)
     deck.append(tempdeck.pop(pos))
   notify("{} is dealing {} dominoes out.".format(me, count))
-  while loop < count:
+  while loop < count:##Each while loop deals one domino to each player, and loops for count times.  Functionally similar to card drawing
     for player in players:
       decksize = len(deck) - 1
       randompos = rnd(0, decksize)
@@ -85,8 +85,8 @@ def doublesix(group, x = 0, y = 0, randompos = 0, decksize = 0, loop = 0):
       card = table.create(domino,0,0,1,persist=True)
       card.moveTo(player.hand)
       del deck[randompos]
-    loop += 1
-  setGlobalVariable("Deck", str(deck))
+    loop += 1##increments the loop count once one card has been dealt to each player
+  setGlobalVariable("Deck", str(deck))##stores the Draw Pile into the global variable
   notify("{} started a new Double-Six game.".format(me))
 
 def doublenine(group, x = 0, y = 0, randompos = 0, decksize = 0, loop = 0):
