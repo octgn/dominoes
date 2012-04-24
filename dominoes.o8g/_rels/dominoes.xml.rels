@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Target="/cards/back.png" Id="r01" Type="http://schemas.octgn.org/picture" />
+  <Relationship Target="/cards/front.png" Id="r02" Type="http://schemas.octgn.org/picture" />
+  <Relationship Target="/groups/deck.png" Id="r03" Type="http://schemas.octgn.org/picture" />
+  <Relationship Target="/groups/hand.png" Id="r05" Type="http://schemas.octgn.org/picture" />
+  <Relationship Target="/background/wood.jpg" Id="r06" Type="http://schemas.octgn.org/picture" />
+  <Relationship Target="/scripts/actions.py" Id="r07" Type="http://schemas.octgn.org/script" />
+  <Relationship Target="/counters/score.png" Id="r08" Type="http://schemas.octgn.org/picture" />
+</Relationships>
+  

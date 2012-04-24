@@ -1,0 +1,60 @@
+<set name="Dominoes" id="c3ee9509-f69b-4c45-8109-06709a797ff9" gameId="662e53a4-f44b-447d-8fe7-5bf9bb7c1a85" gameVersion="1.0.0" version="1.0.0" >
+<cards>
+ <card id="50d634aa-9aed-4583-81d6-c3097c090271" name="0 | 0"></card>
+ <card id="92abea24-1caa-49ee-bfbf-f696d64b20d3" name="0 | 1"></card>
+ <card id="9cf9663f-fff6-4b03-8519-01bd1ee1fc26" name="0 | 2"></card>
+ <card id="b6746b63-4c1f-4f02-b3b3-2c3d5a1a2eae" name="0 | 3"></card>
+ <card id="94f958d8-6348-473b-8db7-2d8223d30a3b" name="0 | 4"></card>
+ <card id="c8de18c0-f455-41b1-bf6a-004e21ca8421" name="0 | 5"></card>
+ <card id="9a1c3b7c-4f27-4d20-b447-9fc0064c843e" name="0 | 6"></card>
+ <card id="54a2cd0d-506f-4f89-b9cc-db41cf93753a" name="0 | 7"></card>
+ <card id="8720ca31-e1d0-4996-ba89-2a2a4ec9c5f4" name="0 | 8"></card>
+ <card id="ad14face-d022-4e55-a5b0-0a47f9b470b9" name="0 | 9"></card>
+ <card id="352df8b2-d24e-4013-8d77-db4bc2fa68b1" name="1 | 1"></card>
+ <card id="8a239bdd-af69-4b6a-b51c-b9de988f7ffd" name="1 | 2"></card>
+ <card id="fead3bb4-cc30-4907-a166-55fbed53d09f" name="1 | 3"></card>
+ <card id="1cbd7a40-5338-4289-adc0-5e14ef3794bd" name="1 | 4"></card>
+ <card id="a14b85f3-955b-43c4-8325-fde993736c81" name="1 | 5"></card>
+ <card id="c6db9c8d-2403-4cb7-b062-8411d93f2548" name="1 | 6"></card>
+ <card id="62c652e9-af51-4b92-b588-69b724bf9df7" name="1 | 7"></card>
+ <card id="eceb9480-2fb5-4939-9f7f-667b8d716f2c" name="1 | 8"></card>
+ <card id="29d750e6-e408-4c99-bfff-1f299fdeaf34" name="1 | 9"></card>
+ <card id="67d2e2b6-d7fc-4ac5-a048-936247a97379" name="2 | 2"></card>
+ <card id="4775fd74-6370-419e-8241-5f96c7141229" name="2 | 3"></card>
+ <card id="20af19af-f6d3-42cf-8b91-9d8f5d3da606" name="2 | 4"></card>
+ <card id="174aee05-188c-4d3c-b0ec-8d21eb095a1f" name="2 | 5"></card>
+ <card id="1252ee8e-164e-4365-b1f2-8e851122ade3" name="2 | 6"></card>
+ <card id="94f8e05d-d10e-493a-90a2-d873ce750254" name="2 | 7"></card>
+ <card id="76219712-9ed5-4fe2-b6d1-b6d9b6e4ddd4" name="2 | 8"></card>
+ <card id="0b5675e7-cbe7-416d-b96c-c2b4718e3fd4" name="2 | 9"></card>
+ <card id="9704c2ae-f6c1-4fc0-8f11-b7b33fbd872e" name="3 | 3"></card>
+ <card id="b39e81ee-5ec1-4bdc-a472-25978d20b55f" name="3 | 4"></card>
+ <card id="8de3bebe-83a2-4a97-9506-c9b651e27d97" name="3 | 5"></card>
+ <card id="aa6783d7-063e-4fee-821f-3d951be2bd67" name="3 | 6"></card>
+ <card id="5723fe67-bb1a-4740-80bf-850891fb5d24" name="3 | 7"></card>
+ <card id="1b4c4e1c-53aa-4bc5-8e31-dc615e435888" name="3 | 8"></card>
+ <card id="daba07f3-5b9a-4397-b9d1-73264b6dd225" name="3 | 9"></card>
+ <card id="c1727705-c27c-48bb-8a5a-8e7841f65a9c" name="4 | 4"></card>
+ <card id="df7b1779-d11a-4858-baa8-bcd9e3cd5a32" name="4 | 5"></card>
+ <card id="f4c6f4bf-4763-4603-816e-418603baddcc" name="4 | 6"></card>
+ <card id="14367fcf-22f6-4419-841c-ed3368dbcbf0" name="4 | 7"></card>
+ <card id="bb706db1-f32e-44dc-a3d9-83de2147c0f2" name="4 | 8"></card>
+ <card id="ffde946c-fe4f-4805-a9ef-8c77068c9ea6" name="4 | 9"></card>
+ <card id="83182bbb-1537-4d00-b12b-5fbd438a39e2" name="5 | 5"></card>
+ <card id="bcfc99cb-3368-4084-a3bb-a664d689edcc" name="5 | 6"></card>
+ <card id="1c31db16-6b53-4f94-9ec8-d71110b0f79e" name="5 | 7"></card>
+ <card id="e05e1af7-7700-4d81-8b9e-64f6e41060a4" name="5 | 8"></card>
+ <card id="6fc9fa89-82b8-4002-8fb0-46e5da48dfa9" name="5 | 9"></card>
+ <card id="818823e0-8ea3-4b0a-b11f-6d5c4c26e4e0" name="6 | 6"></card>
+ <card id="ba5af46e-bb00-443b-98e2-d13e10d1a069" name="6 | 7"></card>
+ <card id="4124427c-2e0f-4e1f-aad6-20eb3ce90ed8" name="6 | 8"></card>
+ <card id="2b40e12d-d3b7-43af-a710-c86ebb0d2740" name="6 | 9"></card>
+ <card id="a0945f65-2ced-4376-bc0b-ee56320666ee" name="7 | 7"></card>
+ <card id="cb5aa229-a7d1-42aa-b764-ce5a27fd7f82" name="7 | 8"></card>
+ <card id="372cfdd0-6a72-4eeb-be5a-6c16a13c48b3" name="7 | 9"></card>
+ <card id="c519ad62-b58d-4dd6-96d6-2d8944ca22c4" name="8 | 8"></card>
+ <card id="9a43ba76-f6da-4b2e-afe7-77cb245955db" name="8 | 9"></card>
+ <card id="5201e0a8-77fa-4411-8ef7-00ae5eda54a2" name="9 | 9"></card>
+
+</cards>
+</set>

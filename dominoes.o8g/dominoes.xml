@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<game name="Dominoes" id="662e53a4-f44b-447d-8fe7-5bf9bb7c1a85" octgnVersion="3.0.1.4" version="1.0.0" markersize="25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <globalvariables> 
+      <globalvariable name="Deck" value="[ ]" />
+    </globalvariables>
+    <scripts>
+      <script src="r07" />
+    </scripts>
+    <card back="r01" front="r02" width="10" height="20" cornerRadius="2">
+    </card>
+    <table name="Table" visibility="undefined" ordered="false" width="80" height="65" background="r06" backgroundStyle="uniformToFill">
+    <cardaction menu="Rotate Clockwise" shortcut="ctrl+E" default="True" execute="rotateClockwise" />
+    <cardaction menu="Rotate CounterClockwise" shortcut="ctrl+Q" execute="rotateCounter" />
+    <cardaction menu="Move Domino Up One Space" shortcut="ctrl+W" execute="moveup" />
+    <cardaction menu="Move Domino Down One Space" shortcut="ctrl+S" execute="movedown" />
+    <cardaction menu="Move Domino Left One Space" shortcut="ctrl+A" execute="moveleft" />
+    <cardaction menu="Move Domino Right One Space" shortcut="ctrl+D" execute="moveright" />
+    <cardaction menu="Discard Domino" shortcut="del" execute="discard" />
+    <groupaction menu="Draw a Domino" shortcut="ctrl+shift+D" execute="draw" />
+    <groupaction menu="Roll 20-sided Die" shortcut="ctrl+R" execute="rolldie" />
+    <groupactions menu="Start a New Game..." >
+     <groupction menu="Start a Double-Six Game" execute="doublesix" />
+     <groupction menu="Start a Double-Nine Game" execute="doublenine" />
+    </groupactions>
+    </table>
+   <player summary="Hand:{#Hand} Score:{#Score}">
+    <counter name="Score" icon="r08" />
+    <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="false" width="63" height="88" icon="r05">
+    <cardaction menu="Discard Domino" shortcut="del" execute="discard" />
+    <groupaction menu="Draw a Domino" shortcut="ctrl+shift+D" execute="draw" />
+    </hand>
+  </player>
+  <deck>
+  </deck>
+  <shared>
+    <group name="Discard Pile" shortcut="del" visibility="all" width="63" height="88" icon="r03">
+    </group>
+  </shared>
+</game>
