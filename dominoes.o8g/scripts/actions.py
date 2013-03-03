@@ -131,9 +131,7 @@ def discard(card, x = 0, y = 0):
   else:
     text = "their hand"
   card.isFaceUp = True
-  notify("1")
   card.moveTo(shared.piles['Discard Pile'])
-  notify("2")
   rnd(10,100)
   notify("{} discards {} from {}.".format(me, card, text))
 
