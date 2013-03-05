@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<game name="Dominoes" id="662e53a4-f44b-447d-8fe7-5bf9bb7c1a85" octgnVersion="3.0.1.4" version="1.0.1" markersize="25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<game name="Dominoes" id="662e53a4-f44b-447d-8fe7-5bf9bb7c1a85" octgnVersion="3.0.1.4" version="1.0.2" markersize="25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <globalvariables> 
       <globalvariable name="Deck" value="[ ]" />
     </globalvariables>

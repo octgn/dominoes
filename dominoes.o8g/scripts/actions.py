@@ -46,8 +46,7 @@ def draw(group, x = 0, y = 0, randompos = 0, decksize = 0):
   decksize = len(deck) - 1##counts the number of dominoes in the Pile, then subtracts by one to obtain the upper boundary of the list index
   randompos = rnd(0, decksize)##Generate a random number corresponding to an index in the Draw Pile list
   domino = deck[randompos]##Identifies the specific domino at that position of the list
-  card = table.create(domino,0,0,1,persist=True)##Creates the randomly selected domino
-  card.moveTo(me.hand)
+  card = me.hand.create(domino,1)##Creates the randomly selected domino
   del deck[randompos]##Removes the domino from the Draw Pile so others won't draw it again
   setGlobalVariable("Deck", str(deck))##Stores the new Draw Pile into the shared global variable
   notify("{} drew a domino from the Draw Pile.".format(me))
@@ -82,8 +81,7 @@ def doublesix(group, x = 0, y = 0, randompos = 0, decksize = 0, loop = 0):
       decksize = len(deck) - 1
       randompos = rnd(0, decksize)
       domino = deck[randompos]
-      card = table.create(domino,0,0,1,persist=True)
-      card.moveTo(player.hand)
+      card = player.hand.create(domino,1)
       del deck[randompos]
     loop += 1##increments the loop count once one card has been dealt to each player
   setGlobalVariable("Deck", str(deck))##stores the Draw Pile into the global variable
@@ -116,8 +114,7 @@ def doublenine(group, x = 0, y = 0, randompos = 0, decksize = 0, loop = 0):
       decksize = len(deck) - 1
       randompos = rnd(0, decksize)
       domino = deck[randompos]
-      card = table.create(domino,0,0,1,persist=True)
-      card.moveTo(player.hand)
+      card = player.hand.create(domino,1)
       del deck[randompos]
     loop += 1
   setGlobalVariable("Deck", str(deck))
