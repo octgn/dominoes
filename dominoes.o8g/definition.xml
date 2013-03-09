@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<game name="Dominoes" id="662e53a4-f44b-447d-8fe7-5bf9bb7c1a85" octgnVersion="3.0.1.4" version="1.0.2" markersize="25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<game name="Dominoes" id="662e53a4-f44b-447d-8fe7-5bf9bb7c1a85" octgnVersion="3.0.1.4" version="1.0.2" markersize="25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		setsurl="http://www.octgn.net" gameurl="http://www.octgn.net" authors="Brine, Kelly Elton"
+		description="A dominoes game for OCTGN"
+		tags="Dominoes" iconurl="http://www.octgn.net">
     <scripts>
-      <script src="r07" />
+      <script src="scripts/actions.py" />
     </scripts>
     <globalvariables> 
       <globalvariable name="Deck" value="[ ]" />
     </globalvariables>
-    <card back="r01" front="r02" width="10" height="20" cornerRadius="2">
+    <card back="cards/back.png" front="cards/front.png" width="10" height="20" cornerRadius="2">
     </card>
-    <table name="Table" visibility="undefined" ordered="False" width="80" height="65" background="r06" backgroundStyle="uniformToFill">
+    <table name="Table" visibility="undefined" ordered="False" width="80" height="65" background="background/wood.jpg" backgroundStyle="uniformToFill">
     <cardaction menu="Rotate Clockwise" shortcut="ctrl+E" default="True" execute="rotateClockwise" />
     <cardaction menu="Rotate CounterClockwise" shortcut="ctrl+Q" execute="rotateCounter" />
     <cardaction menu="Move Domino Up One Space" shortcut="ctrl+W" execute="moveup" />
@@ -24,14 +27,14 @@
     </groupactions>
     </table>
    <player summary="Hand:{#Hand} Score:{#Score}">
-    <counter name="Score" icon="r08" />
-    <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="r05">
+    <counter name="Score" icon="counters/score.png" />
+    <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="groups/hand.png">
     <cardaction menu="Discard Domino" shortcut="del" execute="discard" />
     <groupaction menu="Draw a Domino" shortcut="ctrl+shift+D" execute="draw" />
     </hand>
   </player>
   <shared>
-    <group name="Discard Pile" shortcut="del" visibility="all" width="63" height="88" icon="r03">
+    <group name="Discard Pile" shortcut="del" visibility="all" width="63" height="88" icon="groups/deck.png">
     </group>
   </shared>
 </game>
