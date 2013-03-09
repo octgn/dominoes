@@ -8,8 +8,8 @@
     </globalvariables>
     <card back="r01" front="r02" width="10" height="20" cornerRadius="2">
     </card>
-    <table name="Table" visibility="undefined" ordered="false" width="80" height="65" background="r06" backgroundStyle="uniformToFill">
-    <cardaction menu="Rotate Clockwise" shortcut="ctrl+E" default="true" execute="rotateClockwise" />
+    <table name="Table" visibility="undefined" ordered="False" width="80" height="65" background="r06" backgroundStyle="uniformToFill">
+    <cardaction menu="Rotate Clockwise" shortcut="ctrl+E" default="True" execute="rotateClockwise" />
     <cardaction menu="Rotate CounterClockwise" shortcut="ctrl+Q" execute="rotateCounter" />
     <cardaction menu="Move Domino Up One Space" shortcut="ctrl+W" execute="moveup" />
     <cardaction menu="Move Domino Down One Space" shortcut="ctrl+S" execute="movedown" />
@@ -25,7 +25,7 @@
     </table>
    <player summary="Hand:{#Hand} Score:{#Score}">
     <counter name="Score" icon="r08" />
-    <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="false" width="63" height="88" icon="r05">
+    <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="r05">
     <cardaction menu="Discard Domino" shortcut="del" execute="discard" />
     <groupaction menu="Draw a Domino" shortcut="ctrl+shift+D" execute="draw" />
     </hand>
@@ -35,4 +35,3 @@
     </group>
   </shared>
 </game>
-
