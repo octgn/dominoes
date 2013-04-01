@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+  <blocks>
+    <block type="overlay" id="t1" src="proxy/1.png">      <location x="0" y="0" />    </block>
+    <block type="overlay" id="t2" src="proxy/2.png">      <location x="0" y="0" />    </block>
+    <block type="overlay" id="t3" src="proxy/3.png">      <location x="0" y="0" />    </block>
+    <block type="overlay" id="t4" src="proxy/4.png">      <location x="0" y="0" />    </block>
+    <block type="overlay" id="t5" src="proxy/5.png">      <location x="0" y="0" />    </block>
+    <block type="overlay" id="t6" src="proxy/6.png">      <location x="0" y="0" />    </block>
+    <block type="overlay" id="t7" src="proxy/7.png">      <location x="0" y="0" />    </block>
+    <block type="overlay" id="t8" src="proxy/8.png">      <location x="0" y="0" />    </block>
+    <block type="overlay" id="t9" src="proxy/9.png">      <location x="0" y="0" />    </block>
+
+    <block type="overlay" id="b1" src="proxy/1.png">      <location x="0" y="320" />    </block>
+    <block type="overlay" id="b2" src="proxy/2.png">      <location x="0" y="320" />    </block>
+    <block type="overlay" id="b3" src="proxy/3.png">      <location x="0" y="320" />    </block>
+    <block type="overlay" id="b4" src="proxy/4.png">      <location x="0" y="320" />    </block>
+    <block type="overlay" id="b5" src="proxy/5.png">      <location x="0" y="320" />    </block>
+    <block type="overlay" id="b6" src="proxy/6.png">      <location x="0" y="320" />    </block>
+    <block type="overlay" id="b7" src="proxy/7.png">      <location x="0" y="320" />    </block>
+    <block type="overlay" id="b8" src="proxy/8.png">      <location x="0" y="320" />    </block>
+    <block type="overlay" id="b9" src="proxy/9.png">      <location x="0" y="320" />    </block>
+  </blocks>
+
+
+  <template src="proxy/back.png">    <matches> <match name="Name" value="0 | 0" /> </matches>        </template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="0 | 1" /> </matches>        <overlayblocks>  <link block="b1" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="0 | 2" /> </matches>        <overlayblocks>  <link block="b2" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="0 | 3" /> </matches>        <overlayblocks>  <link block="b3" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="0 | 4" /> </matches>        <overlayblocks>  <link block="b4" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="0 | 5" /> </matches>        <overlayblocks>  <link block="b5" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="0 | 6" /> </matches>        <overlayblocks>  <link block="b6" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="0 | 7" /> </matches>        <overlayblocks>  <link block="b7" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="0 | 8" /> </matches>        <overlayblocks>  <link block="b8" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="0 | 9" /> </matches>        <overlayblocks>  <link block="b9" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="1 | 1" /> </matches>        <overlayblocks> <link block="t1" /> <link block="b1" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="1 | 2" /> </matches>        <overlayblocks> <link block="t1" /> <link block="b2" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="1 | 3" /> </matches>        <overlayblocks> <link block="t1" /> <link block="b3" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="1 | 4" /> </matches>        <overlayblocks> <link block="t1" /> <link block="b4" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="1 | 5" /> </matches>        <overlayblocks> <link block="t1" /> <link block="b5" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="1 | 6" /> </matches>        <overlayblocks> <link block="t1" /> <link block="b6" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="1 | 7" /> </matches>        <overlayblocks> <link block="t1" /> <link block="b7" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="1 | 8" /> </matches>        <overlayblocks> <link block="t1" /> <link block="b8" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="1 | 9" /> </matches>        <overlayblocks> <link block="t1" /> <link block="b9" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="2 | 2" /> </matches>        <overlayblocks> <link block="t2" /> <link block="b2" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="2 | 3" /> </matches>        <overlayblocks> <link block="t2" /> <link block="b3" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="2 | 4" /> </matches>        <overlayblocks> <link block="t2" /> <link block="b4" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="2 | 5" /> </matches>        <overlayblocks> <link block="t2" /> <link block="b5" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="2 | 6" /> </matches>        <overlayblocks> <link block="t2" /> <link block="b6" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="2 | 7" /> </matches>        <overlayblocks> <link block="t2" /> <link block="b7" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="2 | 8" /> </matches>        <overlayblocks> <link block="t2" /> <link block="b8" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="2 | 9" /> </matches>        <overlayblocks> <link block="t2" /> <link block="b9" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="3 | 3" /> </matches>        <overlayblocks> <link block="t3" /> <link block="b3" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="3 | 4" /> </matches>        <overlayblocks> <link block="t3" /> <link block="b4" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="3 | 5" /> </matches>        <overlayblocks> <link block="t3" /> <link block="b5" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="3 | 6" /> </matches>        <overlayblocks> <link block="t3" /> <link block="b6" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="3 | 7" /> </matches>        <overlayblocks> <link block="t3" /> <link block="b7" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="3 | 8" /> </matches>        <overlayblocks> <link block="t3" /> <link block="b8" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="3 | 9" /> </matches>        <overlayblocks> <link block="t3" /> <link block="b9" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="4 | 4" /> </matches>        <overlayblocks> <link block="t4" /> <link block="b4" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="4 | 5" /> </matches>        <overlayblocks> <link block="t4" /> <link block="b5" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="4 | 6" /> </matches>        <overlayblocks> <link block="t4" /> <link block="b6" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="4 | 7" /> </matches>        <overlayblocks> <link block="t4" /> <link block="b7" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="4 | 8" /> </matches>        <overlayblocks> <link block="t4" /> <link block="b8" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="4 | 9" /> </matches>        <overlayblocks> <link block="t4" /> <link block="b9" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="5 | 5" /> </matches>        <overlayblocks> <link block="t5" /> <link block="b5" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="5 | 6" /> </matches>        <overlayblocks> <link block="t5" /> <link block="b6" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="5 | 7" /> </matches>        <overlayblocks> <link block="t5" /> <link block="b7" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="5 | 8" /> </matches>        <overlayblocks> <link block="t5" /> <link block="b8" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="5 | 9" /> </matches>        <overlayblocks> <link block="t5" /> <link block="b9" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="6 | 6" /> </matches>        <overlayblocks> <link block="t6" /> <link block="b6" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="6 | 7" /> </matches>        <overlayblocks> <link block="t6" /> <link block="b7" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="6 | 8" /> </matches>        <overlayblocks> <link block="t6" /> <link block="b8" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="6 | 9" /> </matches>        <overlayblocks> <link block="t6" /> <link block="b9" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="7 | 7" /> </matches>        <overlayblocks> <link block="t7" /> <link block="b7" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="7 | 8" /> </matches>        <overlayblocks> <link block="t7" /> <link block="b8" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="7 | 9" /> </matches>        <overlayblocks> <link block="t7" /> <link block="b9" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="8 | 8" /> </matches>        <overlayblocks> <link block="t8" /> <link block="b8" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="8 | 9" /> </matches>        <overlayblocks> <link block="t8" /> <link block="b9" /> </overlayblocks></template>
+  <template src="proxy/back.png">    <matches> <match name="Name" value="9 | 9" /> </matches>        <overlayblocks> <link block="t9" /> <link block="b9" /> </overlayblocks></template>
+
+
+</templates>
